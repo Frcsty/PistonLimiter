@@ -1,0 +1,5 @@
+name: PistonLimiter
+version: @version@
+main: com.github.frcsty.pistonlimiter.LimiterPlugin
+author: Frcsty
+api-version: 1.13
