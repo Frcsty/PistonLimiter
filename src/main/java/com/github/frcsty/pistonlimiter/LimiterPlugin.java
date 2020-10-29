@@ -2,6 +2,7 @@ package com.github.frcsty.pistonlimiter;
 
 import com.github.frcsty.pistonlimiter.listener.PistonExtendListener;
 import com.github.frcsty.pistonlimiter.listener.PistonRetractListener;
+import com.github.frcsty.pistonlimiter.listener.RedstoneCurrentListener;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.event.Listener;
@@ -49,7 +50,9 @@ public final class LimiterPlugin extends JavaPlugin {
     public void onEnable() {
         registerListeners(
                 new PistonExtendListener(),
-                new PistonRetractListener()
+                new PistonRetractListener(),
+
+                new RedstoneCurrentListener()
         );
     }
 
